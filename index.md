@@ -5,6 +5,12 @@ You can use the [editor on GitHub](https://github.com/enzopn10/PowerMath/edit/ma
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## Hypotenuse, Opposite, Adjacent
+#
+# Get the [Hypotenuse, Opposite, Adjacent]
+# with a script in powershell that makes it 
+# cooler and better to understand
+#
+
 ```markdown
 & {
 & {
