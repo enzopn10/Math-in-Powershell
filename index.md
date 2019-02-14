@@ -1,12 +1,144 @@
-## Welcome to GitHub Pages
+### Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/enzopn10/PowerMath/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Hypotenuse, Opposite, Adjacent
+```markdown
+& {
+& {
+while ($option -ne "done") {
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+& {
+$option=""
+$var=""
+$opt=""
+$opp=""
+$sin=""
+$hip=""
+$adj=""
+$cos=""
+} # Clear Variables
+& {
+echo "                                         "
+echo "       !  !  !  SOHCAHTOA  !  !  !       "
+echo "                                         "
+echo "    SOH            CAH            TOA    "
+echo "                                         "
+echo " S   O   H      C   A   H      T   O   A "
+echo " |   |   |      |   |   |      |   |   | "
+echo " v   v   v      v   v   v      v   v   v "
+echo "sin opp/hip    cos adj/hip    tan opp/adj"
+echo "                                         "
+echo "                                         "
+echo "                    |                    "
+echo "  Sin = Sine        |  Hip = Hypotenuse  "
+echo "                    |                    "
+echo "  Con = Cosine      |  Opp = Opposite    "
+echo "                    |                    "
+echo "  Tan = Tangent     |  Adj = Adjacent    "
+echo "                    |                    "
+echo "                                         "
+} # Text Art
+& {
+$option = Read-Host " SIN , CON or TAN ?_ "
+
+if ($option -eq "SIN") {
+$opt = Read-Host " OPP or HIP ?_ "
+
+if ($opt -eq "OPP") {
+$var = Read-Host " What is the _ SIN ?_ "
+$opp = Read-Host " What is the _ OPP ?_ "
+$sin=[System.Math]::Sin($var/180*[System.Math]::PI)
+$hip=$opp/$sin
+echo ""
+echo "   Hypotenuse = '$hip' "
+echo ""
+pause
+}
+
+if ($opt -eq "HIP") {
+$var = Read-Host " What is the _ SIN ?_ "
+$hip = Read-Host " What is the _ HIP ?_ "
+$sin=[System.Math]::Sin($var/180*[System.Math]::PI)
+$opp=$hip*$sin
+echo ""
+echo "   Opposite = '$opp'"
+echo ""
+pause
+}
+
+}
+
+if ($option -eq "COS") {
+$opt = Read-Host " ADJ or HIP ?_ "
+
+if ($opt -eq "ADJ") {
+$var=Read-Host " What is the _ COS ?_ "
+$adj=Read-Host " What is the _ ADJ ?_ "
+$cos=[System.Math]::cos($var/180*[System.Math]::PI)
+$opp=$adj/$cos
+echo ""
+echo "   Hypotenuse = '$hip'"
+echo ""
+pause
+}
+
+if ($opt -eq "HIP") {
+$var = Read-Host " What is the _ COS ?_ "
+$hip = Read-Host " What is the _ HIP ?_ "
+$cos=[System.Math]::cos($var/180*[System.Math]::PI)
+$adj=$hip*$cos
+echo ""
+echo "   Adjacent = '$adj'"
+echo ""
+pause
+}
+
+}
+
+if ($option -eq "TAN") {
+$opt = Read-Host " OPP or ADJ ?_ "
+
+if ($opt -eq "OPP") {
+$var = Read-Host " What is the _ TAN ?_ "
+$opp = Read-Host " What is the _ OPP ?_ "
+$tan=[System.Math]::tan($var/180*[System.Math]::PI)
+$adj=$opp/$tan
+echo ""
+echo "   Adjacent = '$adj'"
+echo ""
+pause
+}
+
+if ($opt -eq "ADJ") {
+$var = Read-Host " What is the _ TAN ?_ "
+$adj = Read-Host " What is the _ ADJ ?_ "
+$tan=[System.Math]::tan($var/180*[System.Math]::PI)
+$opp=$adj*$tan
+echo ""
+echo "   Opposite = '$opp'"
+echo ""
+pause
+}
+
+}
+} # Read Host and Math
+}
+} # Loop
+& {
+$option=""
+$var=""
+$opt=""
+$opp=""
+$sin=""
+$hip=""
+$adj=""
+$cos=""
+} # Clear Variables (x2)
+} # Everything
+```
 
 ```markdown
 Syntax highlighted code block
